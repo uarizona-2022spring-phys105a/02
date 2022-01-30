@@ -80,13 +80,55 @@ def quadratic0(a, b, c):
 # quadratic formula.  We may even reuse the old quadratic0() function:
 #
 # TODO: fill in the correct condition in the following function, and
-# update the second last line to use quadratic1() instead of
-# quadratic0().
+# update the second last line in the "1. MAIN BLOCK" to use
+# quadratic1() instead of quadratic0().
+#
+# Try
+#
+#    ./quadratic.py 0 1 2
+#
+# again and it should now be able handle this special case.
 def quadratic1(a, b, c):
-    if ________:
+    if ______:
         return (-c / b,)
     else:
         return quadratic0(a, b, c)
+
+# DISCUSSION: in principle, b may also be set to zero.  What should we
+# do when that happen?  (This won't be graded.  But we will discuss
+# this in lecture 4 if there is time.)
+
+#------------------------------------------------------------------------------
+# Try another case
+#
+#    ./quadratic.py 1 2 2
+#
+# This is a situation that the quadratic equation does not have a real
+# root.  In quadratic0(), we simply take the square root of the
+# discriminant = b**2 - 4 * a * c without checking its sign.  So let's
+# improve our function again to handle it.
+#
+# TODO: fill in the correct conditions in the following function, and
+# update the second last line in the "1. MAIN BLOCK" to use
+# quadratic2() instead of quadratic1().
+#
+# Try
+#
+#    ./quadratic.py 1 2 2
+#
+# again and it should now be able handle this case.
+def quadratic2(a, b, c):
+    if ______:
+        return (-c / b,)
+    else:
+        D = b**2 - 4 * a * c
+        if ______:
+            d  = sqrt(D)
+            x1 = (-b + d) / (2 * a)
+            x2 = (-b - d) / (2 * a)
+            return (x1, x2)
+        else:
+            return ()
 
 #==============================================================================
 # 1. MAIN BLOCK
