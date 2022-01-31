@@ -280,8 +280,10 @@ parser.add_argument('a', type=float, help='the coefficient of the quadratic term
 parser.add_argument('b', type=float, help='the coefficient of the linear    term')
 parser.add_argument('c', type=float, help='the coefficient of the constant  term')
 
-# Actually parse the command line arguments.  You can test the effect
-# of this line by typing:
+# Actually parse the command line arguments.
+args = parser.parse_args()
+
+# You can test the effect of the above line by typing:
 #
 #     ./quadratic.py
 #
@@ -291,10 +293,8 @@ parser.add_argument('c', type=float, help='the coefficient of the constant  term
 #     ./quadratic.py -h
 #
 # to see the help page and find out the meanings of `a`, `b`, and `c`.
-# Note that, the following line would terminate this program if you
-# don't give it three arguments.  So nothing below the following line
-# would be executed.
-args = parser.parse_args()
+# Note that, the above line would terminate this program if you don't
+# give it three arguments.  So nothing below would be executed.
 
 #------------------------------------------------------------------------------
 # Now, assume you paid attention to the command line and typed in
