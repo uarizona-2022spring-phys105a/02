@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 #
+#==============================================================================
 # 0. INTRODUCTION
 #
 # This is the assignment for week 3 for PHYS 105A.
@@ -37,20 +38,20 @@
 # between `program` and `script`.  So we will use these two terms
 # interchangeablely in this file.
 #
-# To start, let's go to THE END of this script and look for
-# "1. MAIN SECTION".
+# To start, let's go to line 256 near the end of this script and look
+# for "1. MAIN SECTION".
 #
 #==============================================================================
 # 2. QUADRATIC EQUATION SOLVER
 #
 # NOTE: please read section "1. MAIN SECTION" before you read this section.
 #
-# Here, we want to program a function that solve the quadratic
+# Here, we want to program a function that solves the quadratic
 # equation using the quadratic formula.  To demonstrate the traps in
 # numerical analysis and computational science, we want to create
-# multiple versions that we can compare with.
+# multiple versions so that we can compare them with each other.
 
-# import the square-root function from the standard math library
+# First, we import the square-root function from the standard math library
 from math import sqrt
 
 # The zeroth version is a straightforward implementation of the
@@ -83,7 +84,7 @@ def quadratic0(a, b, c):
 # formula.
 #
 # To avoid this problem, let's develop an improved version of the
-# quadratic formula.  We may even reuse the old quadratic0() function:
+# quadratic solver.  We may even reuse the old quadratic0() function:
 #
 # TODO: fill in the correct condition in the following function, and
 # update the second last line in the "1. MAIN SECTION" to use
@@ -156,17 +157,17 @@ def quadratic2(a, b, c):
 #
 #     x^2 + 1e8 x + 1 == 0
 #
-# to be very close to -1e8 and -1e-8.  Let use this to test out our algorithm:
+# to be very close to -1e8 and -1e-8.  Let's use this to test our code:
 #
 #     ./quadratic.py 1 100000000.00000001 1
 #     ./quadratic.py 1 1e8 1
 #
 # The less negative solutions are -1.49e-08 and -7.45e9, respectively,
-# which are nearly 50% and 25% error.  This is UNACCEPTABLE, given
-# that we expect the accuracy of double precision is ~ 1e-16.
+# which are nearly 50% and 25% off from the correct answers.  This is
+# UNACCEPTABLE, given that the accuracy of double precision is ~ 1e-16.
 #
 # So what went wrong?  Looking at the quadratic formula, because `b`
-# is positive, line 135
+# is positive, line 136
 #
 #     x1 = (-b + d) / (2 * a)
 #
@@ -240,12 +241,12 @@ def quadratic3(a, b, c):
 # You should have learned
 #
 # a) how to structure a python script so it can be used as a command
-#    line program.
+#    line program;
 #
-# b) how to use functions
+# b) how to use functions;
 #
 # c) how to use the if-else statement to take care different
-#    conditions.
+#    conditions;
 #
 # d) how bad things can happen in computing with finite precision, and
 #    how to resolve the "subtracting nearby numbers" problem by
@@ -257,7 +258,7 @@ def quadratic3(a, b, c):
 # In software engineering, it is useful to break a program into
 # multiple smaller functions so you can test each function
 # independently.  In such a case, you will need a "driver script" that
-# process the command line argument and pass them to the different
+# processes the command line argument and passes them to the different
 # functions.  We will do exactly this in this main section.
 
 # Import the standard `argparse` package to help us process command
@@ -312,8 +313,8 @@ print("Solving the quadratic equation:", a, "x^2 +", b, "x +", c, "== 0")
 # However, this script cannot solve anything yet.  To start
 # programming a quadratic equation solver, you need to
 #
-# TODO: uncomment the following lines
+# TODO: uncomment the last two lines of this script
 #
-# and then jump to the section "2. QUADRATIC EQUATION SOLVER"
+# and then jump to the section "2. QUADRATIC EQUATION SOLVER" on line 45.
 #sol = quadratic0(a, b, c)
 #print("Solutions", sol)

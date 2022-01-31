@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 from math import sqrt
 
 def quadratic0(a, b, c):
@@ -41,7 +42,6 @@ def quadratic3(a, b, c):
             return (x1, x2)
         else:
             return ()
-
 
 import argparse
 
