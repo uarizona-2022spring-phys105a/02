@@ -2,8 +2,7 @@
 #
 # 0. INTRODUCTION
 #
-# This is the assignment for week 3 for PHYS 105A.  The expected time
-# to finish it is 30 min.
+# This is the assignment for week 3 for PHYS 105A.
 #
 # In this assignment, you will write a python script that takes
 # exactly three arguments from the command line, interpret those as
