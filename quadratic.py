@@ -228,8 +228,8 @@ def quadratic3(a, b, c):
 
 # DISCUSSION:
 #
-# There is another place in quadratic3() that we need to compute the
-# difference between two potential nearby numbers.  Where is it?  Is
+# There is another place in quadratic3() where we need to compute the
+# difference between two potentially nearby numbers.  Where is it?  Is
 # there a strategy to provide numerically stable solution?
 
 #==============================================================================
