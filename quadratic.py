@@ -101,11 +101,11 @@ def quadratic1(a, b, c):
     else:
         return quadratic0(a, b, c)
 
-# DISCUSSION: in principle, b may also be set to zero.  What should we
-# do when that happen?
+# DISCUSSION:
 #
-# This won't be graded.  But we will discuss this in lecture 4 if
-# there is time.
+# In principle, `b` and `c` may also be set to zero.  What should we
+# do when that happen?  This won't be graded.  But we will discuss
+# this in lecture 4 if there is time.
 
 #------------------------------------------------------------------------------
 # Try another case
@@ -225,6 +225,12 @@ def quadratic3(a, b, c):
             return (x1, x2)
         else:
             return ()
+
+# DISCUSSION:
+#
+# There is another place in quadratic3() that we need to compute the
+# difference between two potential nearby numbers.  Where is it?  Is
+# there a strategy to provide numericall stable solution?
 
 #==============================================================================
 # 3. CONCLUSION
