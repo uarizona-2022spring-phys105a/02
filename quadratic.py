@@ -230,7 +230,7 @@ def quadratic3(a, b, c):
 #
 # There is another place in quadratic3() that we need to compute the
 # difference between two potential nearby numbers.  Where is it?  Is
-# there a strategy to provide numericall stable solution?
+# there a strategy to provide numerically stable solution?
 
 #==============================================================================
 # 3. CONCLUSION
