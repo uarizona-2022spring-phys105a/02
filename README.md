@@ -14,8 +14,12 @@ output will be the two roots.
 
 ### What you have to do
 
-The body of the assignment is in `quadratic.py`, so you should go carefully over
-that file, paying attention to the TODO items.
+The body of the assignment is in `quadratic_explained.py`, so you should go
+carefully over that file, paying attention to the TODO items. We extracted the
+code from `quadratic_explained.py` to `quadratic.py`. You can read the
+explanations in the former and complete the second, or work directly on the
+first one (if you do so, your script is going to be called with
+`./quadratic_explained.py`).
 
 The code defines four functions `quadraticN`, most of which incomplete. You will
 need to complete the missing statements. In doing this, you should run your
