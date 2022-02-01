@@ -1,3 +1,6 @@
+You may accept this assignment in GitHub Classroom using this link:
+https://classroom.github.com/a/0dcZAhe9
+
 ## Assignment 03: your first useful program
 
 In this assignment, you are going to develop your first useful Python program: a
@@ -27,5 +30,3 @@ program to check that it is working as expected. For instance, `quadratic0` is
 already complete. Run the code to a variety of inputs and check that the
 solutions are what you are expecting. Once you have completed and tested a
 function, make a git commit of your progress.
-
-
